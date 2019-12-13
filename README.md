@@ -8,7 +8,7 @@ After repeating a certain process, that is explained later on, the webview of an
 
 ## What do you need to reconstruct the problem?
 
-To reconstruct the problem you need a smartphone that has the Chrome Engine Version 78.0.3904. You need a webview that opens multiple websocket connections. We use "http://www.tobit.software/id/wallet". Since you have to be logged in to open this particular url you also need an account on that website. You need a method to reload the webview using the loadUrl() method from the webview.class. Javascript has to be enabled using webview.setJavascriptEnabled(true). And you also need to setup the webview using webView.setWebViewClient(). 
+To reconstruct the problem you need a smartphone that has the Chrome Engine Version 78.0.3904 or newer. You need a webview that opens multiple websocket connections. We use "http://www.tobit.software/id/wallet". Since you have to be logged in to open this particular url you also need an account on that website. You need a method to reload the webview using the loadUrl() method from the webview.class. Javascript has to be enabled using webview.setJavascriptEnabled(true). And you also need to setup the webview using webView.setWebViewClient(). 
 
 ## How to reconstruct the problem?
 
@@ -48,10 +48,11 @@ at android.os.HandlerThread.run(HandlerThread.java:65)
 - Huawei P Smart (Android-Version 9) Chrome Engine Version 78.0.3904
 - Huawei P 20 Pro Chrome Engine Version 78.0.3904
 - Pixel (Android-Version 10) Chrome Engine Version 78.0.3904
+- OnePlus 7t pro (Android-Version 10) Chrome Engine Version 79.0.3945
  
 ## Further information:
 
-We also tried to make this problem occur by using the Chrome applications. We reloaded the page via the url textfield but the problem didn't occur. For that reason we think that the problem has to be connected to the webview. We also tried to replicate the problem on older Chrome engines but that also didn't make the problem occur.
+We also tried to make this problem occur by using the Chrome applications. We reloaded the page via the url textfield but the problem didn't occur. For that reason we think that the problem has to be connected to the webview. We also tried to replicate the problem on some older Chrome engines but that also didn't make the problem occur.
 
 
 
