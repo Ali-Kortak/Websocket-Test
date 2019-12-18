@@ -49,10 +49,15 @@ at android.os.HandlerThread.run(HandlerThread.java:65)
 - Huawei P 20 Pro Chrome Engine Version 78.0.3904
 - Pixel (Android-Version 10) Chrome Engine Version 78.0.3904
 - OnePlus 7t pro (Android-Version 10) Chrome Engine Version 79.0.3945
+- Nexus 5 (Android-Version 10) Chrome Engine Version 79.0.3904
  
 ## Further information:
 
 We also tried to make this problem occur by using the Chrome applications. We reloaded the page via the url textfield but the problem didn't occur. For that reason we think that the problem has to be connected to the webview. We also tried to replicate the problem on some older Chrome engines but that also didn't make the problem occur.
+
+## Updates:
+
+We added an error log to the application that shows up after the exception occured to make it easier to see that the problem occured. 
 
 
 
