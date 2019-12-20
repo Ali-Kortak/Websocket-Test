@@ -16,13 +16,16 @@ The problem is reconstructed by using the loadUrl() method on a webview which lo
 
 ## Reconstruct it Step-by-step with this application
 
-1. Sign up on "http://www.tobit.software".
-2. Start MainActivity of this Application.
-3. Click the "RELOAD" button.
-4. Sign into your account on the webview.
-5. Start the ReloadWebViewTest class. The Application should now be calling the loadUrl() method.
-6. Wait until the Exception listed below occurs. The webview should also stop reloading the webview since the loadUrl() method takes about one minute longer to reload the url. 
-7. Now click on the navigation-drawer-icon and click on other menu options like "chayns.iD" opening different pages on the webview now take five to ten seconds longer.
+1. Sign up on "http://www.tobit.software". 
+2. Start the MainActivity of this application.
+3. Click on the "LOGIN" button on the screen.
+4. Log in into the page on the webview.
+5. Stop the Application with Android Studio.
+6. Start the MainActivity again.
+7. Click the "RELOAD" button. The Application now calls the loadUrl() method until the exception occurs.
+8. The Application should now reload a webview that shows a QR Code.
+9. Once the exception happens the appication will show a Toast message which says "The Exception occured! Try navigating through the Webview now."
+10. Now try navigating through the webview to see that the application takes five to ten seconds longer to open different pages on the webview.
 
 
 
@@ -49,7 +52,7 @@ at android.os.HandlerThread.run(HandlerThread.java:65)
 - Huawei P 20 Pro Chrome Engine Version 78.0.3904
 - Pixel (Android-Version 10) Chrome Engine Version 78.0.3904
 - OnePlus 7t pro (Android-Version 10) Chrome Engine Version 79.0.3945
-- Nexus 5 (Android-Version 10) Chrome Engine Version 79.0.3904
+- Nexus 5 (Android-Version 10) Chrome Engine Version 78.0.3904
  
 ## Further information:
 
@@ -57,7 +60,15 @@ We also tried to make this problem occur by using the Chrome applications. We re
 
 ## Updates:
 
-We added an error log to the application that shows up after the exception occured to make it easier to see that the problem occured. 
+18.12.2019:
+- We added an error log to the application that shows up after the exception occured to make it easier to see that the problem occured. 
+
+20.12.2019
+- Added a login button to make it easier to log into the website before launching the test
+- Removed the ReloadWebViewTest class
+- Added the logic from the ReloadWebViewTest class to the MainActivity
+- Added a Toast that notifies the user once the exception occured
+
 
 
 
